@@ -2,10 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('C:\Users\Vivianbgds\Downloads\sp.jpg'); 
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5); 
     color: #fff;
     padding: 20px;
 }
