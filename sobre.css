@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(https://thumbs.dreamstime.com/b/claro-fundo-marrom-da-textura-do-close-up-cart%C3%A3o-papel-of%C3%ADcio-textured-bandeira-modelo-molde-aquarela-com-grunge-estrutura-de-152926330.jpg);
+    color: black;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.informacao {
+    display: flex;
+    padding: 20px;
+    background-image: url(https://thumbs.dreamstime.com/b/claro-fundo-marrom-da-textura-do-close-up-cart%C3%A3o-papel-of%C3%ADcio-textured-bandeira-modelo-molde-aquarela-com-grunge-estrutura-de-152926330.jpg)
+}
+
+.informacao-texto {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.informacao-texto h2 {
+    margin-top: 0;
+}
+
+.imagem {
+    margin-left: 20px;
+}
+
+.imagem img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-sobre {
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+    color: #666;
+}
