@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="largura=device-largura, inicial-escala=1.0">
+    <title>Raças</title>
+    <link rel="stylesheet" href="racas.css">
+</head>
+<body>
+    <div class="galeria">
+        <div class="item-galeria" onclick="mostrarPopup('Natureza', 'Uma bela paisagem natural')">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Natureza">
+            <h3>Natureza</h3>
+        </div>
+        <div class="item-galeria" onclick="mostrarPopup('Animais', 'Animais fofinhos')">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Animais">
+            <h3>Animais</h3>
+        </div>
+        <div class="item-galeria" onclick="mostrarPopup('Cidades', 'Vistas urbanas')">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Cidades">
+            <h3>Cidades</h3>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="conteudo-popup">
+            <span class="botao-fechar" onclick="fecharPopup()">&times;</span>
+            <h2 id="titulo-popup"></h2>
+            <p id="texto-popup"></p>
+        </div>
+    </div>
+
+    <script src="racas.js"></script>
+</body>
+</html>
