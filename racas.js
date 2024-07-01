@@ -1,6 +1,6 @@
 function mostrarPopup(titulo, texto) {
-    document.getElementById("titulo-popup").textContent = titulo;
-    document.getElementById("texto-popup").textContent = texto;
+    document.getElementById("popup-title").textContent = titulo;
+    document.getElementById("popup-text").textContent = texto;
     document.getElementById("popup").style.display = "flex";
 }
 
