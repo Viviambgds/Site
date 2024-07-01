@@ -2,31 +2,83 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="largura=device-largura, inicial-escala=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raças</title>
     <link rel="stylesheet" href="racas.css">
 </head>
 <body>
-    <div class="galeria">
-        <div class="item-galeria" onclick="mostrarPopup('Natureza', 'Uma bela paisagem natural')">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Natureza">
-            <h3>Natureza</h3>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="racas.html">Raças</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="gallery">
+        <div class="item-separate"> <!-- Primeira coluna -->
+            <div class="gallery-item" onclick="mostrarPopup('Pastor Alemão', 'Pastor-alemão (em alemão: Deutscher Schäferhund) ou lobo-da-alsácia é uma raça canina proveniente da Alemanha. Em sua origem era utilizado como cão de pastoreio de rebanhos. Atualmente é mais utilizado como cão de guarda e cão policial.')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Adult_male_German_shepherd_dog_standing_at_the_beach_%28retouched%29.jpg" alt="Pastor Alemão">
+                <h1>Pastor Alemão</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Buldogue', 'O buldogue-inglês (em inglês: English Bulldog) é uma raça de cães do tipo buldogue oriunda da Inglaterra. Descende de cães (os antigos-buldogues-ingleses) utilizados para combater touros em um desporto sangrento chamado bull-baiting.')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/CH_Buck_and_Sons_Evita_Peron.jpg/800px-CH_Buck_and_Sons_Evita_Peron.jpg" alt="Buldogue">
+                <h1>Buldogue</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Golden Retriever', 'O golden retriever é uma raça britânica desenvolvida por Lord Tweedmouth no século XIX para caça de aves aquáticas, resultado de cruzamentos seletivos, incluindo o Tweed Water Spaniel. Conhecidos por sua obediência, inteligência e facilidade de treinamento, são usados como cães de assistência, policiais e de resgate. Possuem pelagem dourada e temperamento dócil, sendo populares no Japão, mas cruzamentos indiscriminados podem causar problemas de saúde e comportamento.')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Golden_Retrievers_dark_and_light.jpg" alt="Golden Retriever">
+                <h1>Golden Retriever</h1>    
+            </div>
         </div>
-        <div class="item-galeria" onclick="mostrarPopup('Animais', 'Animais fofinhos')">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Animais">
-            <h3>Animais</h3>
+        <div class="item-separate"> <!-- Segunda coluna -->
+            <div class="gallery-item" onclick="mostrarPopup('Dobermann', 'Dobermann é uma raça de cães do grupo pinscher, oriunda da Alemanha. A raça foi desenvolvida inicialmente por Karl Friedrich Louis Dobermann em Apolda na Alemanha por volta de 1860. Foi a primeira raça criada especialmente para proteção.')">
+                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/10/04/1848286694-dobermannedicasecachorro-1.jpg" alt="Dobermann">
+                <h1>Dobermann</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Border Collie', 'Border collie é uma raça canina do tipo collie desenvolvida na região da fronteira anglo-escocesa na Grã-Bretanha para o trabalho de pastorear gado ovino. Popular em seu país de origem, é considerada a raça de cães mais inteligente, de acordo com o livro de Stanley Coren, A Inteligência dos Cães de 1995')">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv05jXHT4HxuKcQbYTKkdFrspKq6KXdebZw9xMU3mhD5ZgnFlxWvQYLbQtTECkKw-by7Oj3P3OlFp2InzzpK31ZVyZAaobjXLsOmONUCM" alt="Border Collie">
+                <h1>Border Collie</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Bull Terrier', 'Bull terrier inglês é uma raça de cães do tipo terrier com origem no Reino Unido, idealizada por James Hinks a partir de cruzamentos entre o antigo buldogue e english white terrier por volta de 1860.')">
+                <img src="https://www.petlove.com.br/images/breeds/193527/profile/original/bull_terrier-p.jpg?1532538459" alt="Bull Terrier">
+                <h1>Bull Terrier</h1>    
+            </div>
         </div>
-        <div class="item-galeria" onclick="mostrarPopup('Cidades', 'Vistas urbanas')">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK_8CAqOUUuqZ5-vAdeCvplY6h4eka0qsWJauyrMQ0WmuZVbNUNUQ6VRVceMd5cq9WrkmAbW-OGgODjzXN5Pu5ZGQcT7r6ZjJWfU5Tjw" alt="Cidades">
-            <h3>Cidades</h3>
+        <div class="item-separate"> <!-- Terceira coluna -->
+            <div class="gallery-item" onclick="mostrarPopup('Pinscher', 'Pinscher é uma categoria de cães que engloba raças originalmente desenvolvidas como caçadores de ratos em fazendas da Alemanha e Áustria, e para rinha ou guarda, embora hoje sejam mais frequentemente mantidos como animais de estimação. A categoria ou grupo engloba cerca de cinco ou mais raças de cães.')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_oVIRTgZfUZHXbp1lKlK3p7sW7qxre8p7A&s" alt="Pinscher">
+                <h1>Pinscher</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Fox Paulistinha', 'O fox paulistinha é uma raça canina no Brasil, conhecida assim devido à sua semelhança com o fox terrier e à sua prevalência histórica no interior de São Paulo. Oficialmente reconhecida como terrier brasileiro, é também chamada informalmente de fox no Rio Grande do Sul e de Foquinho em Minas Gerais. Fora do Brasil, é mais conhecida por seu nome oficial de registro.')">
+                <img src="https://jornalbomdia.com.br/tb_noticias/17912/fox.jpg" alt="Fox Paulistinha">
+                <h1>Fox Paulistinha</h1>
+            </div>
+            <div class="gallery-item" onclick="mostrarPopup('Basenji', 'A basenji é uma das poucas raças caninas desenvolvidas na África. Há registros de cães semelhantes a esta raça que datam de mais de 4 000 anos, encontrados em desenhos em tumbas egípcias da quarta dinastia.')">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLYaASSM8e7E0_rymmTpKovfKexOmX9NAfEDa3YfJnge60pmaq" alt="Basenji">
+                <h1>Basenji</h1>    
+            </div>
         </div>
-    </div>
+        
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+            </ul>
+        </nav>
+    </footer>
 
     <div class="popup" id="popup">
-        <div class="conteudo-popup">
-            <span class="botao-fechar" onclick="fecharPopup()">&times;</span>
-            <h2 id="titulo-popup"></h2>
-            <p id="texto-popup"></p>
+        <div class="popup-content">
+            <span class="close-button" onclick="fecharPopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
         </div>
     </div>
 
