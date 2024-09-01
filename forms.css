@@ -1,0 +1,30 @@
+
+        body {
+            font-family: 'Apple Chancery';
+            background-image: linear-gradient(to top, #231b17, #442a1d, #ac3926 50%, #c23b14,#231b17, #442a1d, #ac3926 50%, #c23b14);
+            text-align: center;        
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="Nome de usuário" required>
+        <input type="password" id="registerPassword" placeholder="Senha" required>
+        <button type="button" onclick="register()">Cadastrar</button>
+    </form>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Nome de usuário" required>
+        <input type="password" id="loginPassword" placeholder="Senha" required>
+        <button type="button" onclick="login()">Entrar</button>
+    </form>
+
+    <h2>Contato</h2>
+    <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Nome" required>
+        <input type="email" id="contactEmail" placeholder="Email" required>
+        <textarea id="contactMessage" placeholder="Sua mensagem" required></textarea>
+        <button type="button" onclick="sendContact()">Enviar</button>
+    </form>
+
+    <h2>Sugestão</h2>
+    <form id="suggestionForm">
+        <textarea id="suggestion" placeholder="Sua sugestão" required></textarea>
+        <button type="button" onclick="sendSuggestion()">Enviar Sugestão</button>
+    </form>
+
+    <script>
+        function register() {
+            const username = document.getElementById('registerUsername').value;
+            const password = document.getElementById('registerPassword').value;
+
+            if (username && password) {
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+                alert('Cadastro realizado com sucesso!');
+            } else {
+                alert('Por favor, preencha todos os campos!');
+            }
+        }
+
+        function login() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+
+            if (username === storedUsername && password === storedPassword) {
+                alert('Login realizado com sucesso!');
+                window.location.href = 'index.html';
+            } else {
+                alert('Nome de usuário ou senha incorretos!');
+            }
+        }
+
+        function sendContact() {
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+
+            if (name && email && message) {
+                alert(`Obrigado, ${name}. Sua mensagem foi enviada!`);
+            } else {
+                alert('Por favor, preencha todos os campos!');
+            }
+        }
+
+        function sendSuggestion() {
+            const suggestion = document.getElementById('suggestion').value;
+
+            if (suggestion) {
+                alert('Sugestão enviada! Obrigado pela sua opinião.');
+            } else {
+                alert('Por favor, escreva sua sugestão.');
+            }
+        }
+    </script>
+</body>
+</html>
